@@ -8,6 +8,6 @@ defmodule DiscussWeb.TopicController do
     end
 
     def create(conn, params) do
-        IO.inspect(params)
+        %{"topic" => topic}
     end
 end
