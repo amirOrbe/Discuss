@@ -6,7 +6,7 @@ defmodule DiscussWeb.Topic do
         field :title, :string
     end
 
-    def chageset(struct, params \\ %{}) do
+    def changeset(struct, params \\ %{}) do
         struct
         |> cast(params, [:title])
         |> validate_required([:title])
