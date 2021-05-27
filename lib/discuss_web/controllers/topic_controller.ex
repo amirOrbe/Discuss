@@ -7,7 +7,7 @@ defmodule DiscussWeb.TopicController do
         render(conn, "new.html", changeset: changeset) 
     end
 
-    def create(conn, params) do
-        %{"topic" => topic}
+    def create(conn, %{"topic" => topic}) do
+        
     end
 end
