@@ -1,6 +1,7 @@
 defmodule DiscussWeb.TopicController do
     use DiscussWeb, :controller
     alias DiscussWeb.Topic
+    alias Discuss.Repo
 
     def new(conn, _params) do
         changeset = Topic.changeset(%Topic{}, %{})
