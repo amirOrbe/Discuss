@@ -32,7 +32,7 @@ import_config "#{Mix.env()}.exs"
 
 config :ueberauth, Ueberauth,
   providers: [
-    github: {Ueberauth.Strategy.Github, []}
+    github: {Ueberauth.Strategy.Github, [allow_private_emails: true]}
   ]
 
  config :ueberauth,  Ueberauth.Strategy.Github.OAuth,
