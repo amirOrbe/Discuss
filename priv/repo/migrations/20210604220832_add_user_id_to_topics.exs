@@ -2,7 +2,7 @@ defmodule Discuss.Repo.Migrations.AddUserIdToTopics do
   use Ecto.Migration
 
   def change do
-      alter table(:topics) do
+      alter table(:topicss) do
         add :user_id, references(:users) 
       end
   end
