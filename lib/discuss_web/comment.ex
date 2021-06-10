@@ -2,6 +2,9 @@ defmodule DiscussWeb.Comment do
     use Ecto.Schema
     import Ecto.Changeset
 
+
+    @derive {Poison.Encoder, only: [:content]}
+
     schema "comments" do
         field :content, :string
         belongs_to :user, DiscussWeb.User
